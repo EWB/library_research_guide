@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Library Research Guide feature.
+ */
+
+include_once 'library_research_guide.features.inc';
