@@ -50,7 +50,7 @@ function library_research_guide_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -125,7 +125,7 @@ function library_research_guide_field_default_fields() {
           'module' => 'file',
           'settings' => array(),
           'type' => 'file_default',
-          'weight' => 1,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -157,14 +157,14 @@ function library_research_guide_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-library_guide_or_tutorial-field_library_guide_subjects'.
-  $fields['node-library_guide_or_tutorial-field_library_guide_subjects'] = array(
+  // Exported field: 'node-library_guide_or_tutorial-field_subjects'.
+  $fields['node-library_guide_or_tutorial-field_subjects'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_library_guide_subjects',
+      'field_name' => 'field_subjects',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -202,7 +202,7 @@ function library_research_guide_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 2,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -212,7 +212,7 @@ function library_research_guide_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_library_guide_subjects',
+      'field_name' => 'field_subjects',
       'label' => 'Subjects',
       'required' => 0,
       'settings' => array(
@@ -222,7 +222,7 @@ function library_research_guide_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_buttons',
+        'type' => 'options_select',
         'weight' => '1',
       ),
     ),
